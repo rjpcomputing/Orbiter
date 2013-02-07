@@ -206,9 +206,9 @@ local function item_op(fun,t)
 end
 
 local function copy_common(src,dest)
---~     dest.id = src.id
---~     dest.style = src.style
---~     dest.class = src.class
+	dest.id = src.id
+	dest.style = src.style
+	dest.class = src.class
     for k,v in pairs(src) do
         if type(k) == 'string' then
             dest[k] = v
